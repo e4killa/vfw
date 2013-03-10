@@ -1,8 +1,11 @@
 <!DOCTYPE html>
+<!-- Tyrone Ruffin -->   
+<!-- Project 2 -->    
+<!-- Term 1303 -->    
 <html>
     <head>
         <title>Movie Rater</title>
-        <link rel="stylesheet" href="index.html" type="text/css" />
+        <link rel="stylesheet" href="style.css" type="text/css" />
         <meta charset="UTF-8" />
         <meta name="description" content="Keep track of your favorite movie" />
         <meta name="Robots" content="index, follow" />
@@ -34,8 +37,8 @@
                         <li><input type="checkbox" check value="Comedy" id="Comedy" /><label for="Comedy">Comedy</label></li>
                         <li><input type="checkbox" check value="Documentary" id="Documentary" /><label for="Documentary">Documentary</label></li>
                         <li><input type="checkbox" check value="Suspense" id="Suspense" /><label for="Suspense">Suspense</label></li>
+                        <li><input id="test" type="range"/></li>
                     </ul>
-                        </li>
                     <li><label for="comments">What are your thoughts? :</label><textarea id="comments"></textarea>
                     </li>
                     <li>Where did you watch movie?
@@ -45,6 +48,7 @@
                         </ul>
                     </li>
                     <li>
+                        <!-- I could not get this to work properly without the optgroup, I tried using option by itself. -->
                         <label for="rating">Rate The Movie</label>
                         <select id="rating">
                             <optgroup label= "Crappy">
@@ -58,18 +62,6 @@
                             </optgroup>
                         </select>
                     </li>       
-                        
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                 </fieldset>
                 <input type="Submit" value="Save"
             </form>

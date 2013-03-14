@@ -1,21 +1,29 @@
+/* Tyrone Ruffin
+   Project 2
+   VFW 1303
+   03-14-2013*/
 
 
+html{background-color: #B2B2B2;}
 
-html{background-color: #C3CED7;}
-
-h1 {text-align: center; margin-left: auto; margin-right: auto;border: 5px solid black;padding: 5px;background: #8A8A94;width: 200px;}
+h1 {color: #A488AD; text-align: center; margin-left: auto; margin-right: auto;border: 5px double #161616 ;padding: 5px;background: #4A2D72;width: 200px;}
 legend {margin: 70px 30px;margin-left: auto; margin-right: auto;}
 h2 {margin-left: auto; margin-right: auto;}
 a {margin-left: auto; margin-right: auto;}
 .info{font-size: 20px;}
 .user{margin-left: auto; margin-right: auto;}
-.password{margin-left: auto; margin-right: auto;}
+.password{margin-left:auto; margin-right:auto;}
 .title{margin-left: auto; margin-right: auto;}
 #username{margin-left: auto; margin-right: auto;}
 #password{margin-right: 20px;}
 #title{margin-right: 10px;}
-
-
+a:hover{color: #F4DA13; outline: #72AD37 1px solid ; background-color: #4C4C4C;}
+#comments{margin-left: auto; margin-right: auto;}
+#genre{text-decoration-style: solid;}
+input[type="button"] {background-color: black; color: white;}
+input[type="textuser"] {position: relative;right: 100px; left: 20px;}
+input[type="textpassword"] {position: relative;right: 100px; left: 21px;}
+input[type="texttitle"] {position: relative;right: 10px; left: 8px;}
 
 
 

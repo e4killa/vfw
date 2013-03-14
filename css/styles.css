@@ -1,0 +1,24 @@
+
+
+
+html{background-color: #C3CED7;}
+
+h1 {text-align: center; margin-left: auto; margin-right: auto;border: 5px solid black;padding: 5px;background: #8A8A94;width: 200px;}
+legend {margin: 70px 30px;margin-left: auto; margin-right: auto;}
+h2 {margin-left: auto; margin-right: auto;}
+a {margin-left: auto; margin-right: auto;}
+.info{font-size: 20px;}
+.user{margin-left: auto; margin-right: auto;}
+.password{margin-left: auto; margin-right: auto;}
+.title{margin-left: auto; margin-right: auto;}
+#username{margin-left: auto; margin-right: auto;}
+#password{margin-right: 20px;}
+#title{margin-right: 10px;}
+
+
+
+
+
+
+
+

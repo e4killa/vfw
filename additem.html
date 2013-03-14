@@ -5,29 +5,30 @@
 <html>
     <head>
         <title>Movie Rater</title>
-        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link href="css/styles.css" rel="stylesheet" />
         <meta charset="UTF-8" />
         <meta name="description" content="Keep track of your favorite movie" />
         <meta name="Robots" content="index, follow" />
         <meta name="keywords" content="Movies" />
         <meta name="viewport" content="user-scalable=yes, width=device-width" />
         <meta name="HandheldFriendly" content="True" />
-        <meta name="MobileOptimized" content="320" /> 
+        <meta name="MobileOptimized" content="320" />
     </head>
         <body>
             <h1>Movie Rater</h1>
             <form action="#" method="post">
                 <fieldset>
                    <legend>Add Your Movie</legend> 
-                    <ul
-                        <li><label for="username">Username:</label><input type="text" id="username" /></li>    
-                        <li><label for="password">Password:</label><input type="text" id="password" /></li>
-                        <li><label for="title">Movie Title:</label><input type="text" id="title" /></li>    
+                    <ul>
+                        <li id="select"><label for="group">Info:</label><br /></li>
+                        <li class="user"><label for="username">Username:</label><input type="text" id="username" /></li>    
+                        <li class="password"><label for="password">Password:</label><input type="text" id="password" /></li>
+                        <li class="title"><label for="title">Movie Title:</label><input type="text" id="title" /></li>    
                        
                     </ul>
                 </fieldset>
                 <fieldset>
-                    <legend>Info</legend> 
+                    <legend>Movie Data</legend> 
                     <ul>
                         <li>Genres
                         <li><input type="checkbox" check value="Action" id="Action" /><label for="Action">Action</label></li>
@@ -37,7 +38,7 @@
                         <li><input type="checkbox" check value="Comedy" id="Comedy" /><label for="Comedy">Comedy</label></li>
                         <li><input type="checkbox" check value="Documentary" id="Documentary" /><label for="Documentary">Documentary</label></li>
                         <li><input type="checkbox" check value="Suspense" id="Suspense" /><label for="Suspense">Suspense</label></li>
-                        <li><input id="test" type="range"/></li>
+                        <li><input id="movielength" type="range"/></li>
                     </ul>
                     <li><label for="comments">What are your thoughts? :</label><textarea id="comments"></textarea>
                     </li>
@@ -51,7 +52,7 @@
                         <!-- I could not get this to work properly without the optgroup, I tried using option by itself. -->
                         <label for="rating">Rate The Movie</label>
                         <select id="rating">
-                            <optgroup label= "Crappy">
+                            <optgroup id="optgroup" label= "Crappy">
                                 <option value="Sucked">Sucked </option>
                                 <option value="Whatever">Whatever </option>
                             </optgroup>
@@ -63,7 +64,12 @@
                         </select>
                     </li>       
                 </fieldset>
-                <input type="Submit" value="Save"
+                <nav>
+                    <a href="#" id="show">Show Rated Films</a>
+                    <a href="#" id=""clear>Clear Form</a>
+                    <input type="Button" value="Save Rating" id="save" />
+                </nav>    
             </form>
+            <script src="js/main.js" type="text/javascript"></script>
         </body>
 </html>

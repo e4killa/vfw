@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- Tyrone Ruffin -->   
+<!-- Project 2 -->    
+<!-- Term 1303 -->
+<!-- 03-14-2013 -->
+<html>
+    <head>
+        <title>Movie Rater</title>
+        <link href="css/styles.css" rel="stylesheet" />
+        <meta charset="UTF-8" />
+        <meta name="description" content="Keep track of your favorite movie" />
+        <meta name="Robots" content="index, follow" />
+        <meta name="keywords" content="Movies" />
+        <meta name="viewport" content="user-scalable=yes, width=device-width" />
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+    </head>
+        <body>
+            <h1>Movie Rater</h1>
+            <nav>
+                    <a href = "additem.html" id="addNew" style="display: none"> Add Title</a>
+                    <a href="#" id="show">Show Rated Films</a>
+                    <a href="#" id="clear">Clear Form</a>
+            </nav>    
+            <form action="#" method="post" id="contactForm">
+                <fieldset>
+                   <legend>Add Your Movie</legend>
+                    <ul id="errors"></ul>
+                    <ul> 
+                        <li id="select"><label for="group">Info:</label><br /></li>
+                        <li class="user"><label for="username">Username:</label><input type="textuser" id="username" /></li>    
+                        <li class="password"><label for="password">Password:</label><input type="textpassword" id="password" /></li>
+                        <li class="title"><label for="title">Movie Title:</label><input type="texttitle" id="title" /></li>    
+                       
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Movie Data</legend> 
+                    <ul>
+                        <li id=""genre>Genres
+                        <li><input type="checkbox" id="action" value="action" class="checkbox" /><label for="Action">Action</label></li>
+                        <li><input type="checkbox" check value="sci-fi" id="sci-fi" /><label for="Sci-Fi">Sci-Fi</label></li>
+                        <li><input type="checkbox" check value="drama" id="drama" /><label for="Drama">Drama</label></li>
+                        <li><input type="checkbox" check value="horror" id="horror" /><label for="Horror">Horror</label></li>
+                        <li><input type="checkbox" check value="comedy" id="comedy" /><label for="Comedy">Comedy</label></li>
+                        <li><input type="checkbox" check value="documentary" id="documentary" /><label for="Documentary">Documentary</label></li>
+                        <li><input type="checkbox" check value="suspense" id="suspense" /><label for="Suspense">Suspense</label></li>
+                        <li><input id="movielength" type="range"/></li>
+                    </ul>
+                    <li><label< for="comments">What are your thoughts? :</label><textarea id="comments"></textarea>
+                    <br> </br>
+                    </li>
+                    <li>Where did you watch movie?
+                        <ul>
+                            <li><input type="radio" checked value="Movie Theatre" id="movie" name="location" /><label for="movie"> Movie Theatre</label></li>
+                            <li><input type="radio" value="Home Movie" id="home" name="location" /><label for="home"> Home Movie</label></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="rating">Rate The Movie</label>
+                        <select id="rating">
+                            <optgroup id="optgroup" label= "Crappy">
+                                <option value="Sucked">Sucked </option>
+                                <option value="Whatever">Whatever </option>
+                            </optgroup>
+                            <optgroup label= "Good">
+                                <option value="It was OK">It Was OK </option>
+                                <option value="Pretty Good">Pretty Good </option>
+                                <option value="Awesome">Awesome </option>
+                            </optgroup>
+                        </select>
+                    </li>       
+                </fieldset>
+                <input type="Button" value="Save Rating" id="save" />
+            </form>
+            <script src="js/main.js" type="text/javascript"></script>
+        </body>
+</html>

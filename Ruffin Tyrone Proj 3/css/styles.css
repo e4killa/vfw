@@ -1,5 +1,5 @@
 /* Tyrone Ruffin
-   Project 2
+   Project 3
    VFW 1303
    03-14-2013*/
 
@@ -19,7 +19,7 @@ a {margin-left: auto; margin-right: auto;}
 #title{margin-right: 10px;}
 a:hover{color: #F4DA13; outline: #72AD37 1px solid ; background-color: #4C4C4C;}
 #comments{margin-left: auto; margin-right: auto;}
-#genre{text-decoration-style: solid;}
+#genre{text-decoration-style: solid; text-emphasis: none;}
 input[type="button"] {background-color: black; color: white;}
 input[type="textuser"] {position: relative;right: 100px; left: 20px;}
 input[type="textpassword"] {position: relative;right: 100px; left: 21px;}

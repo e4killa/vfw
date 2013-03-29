@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <!-- Tyrone Ruffin -->   
-<!-- Project 2 -->    
+<!-- Project 4 -->    
 <!-- Term 1303 -->
-<!-- 03-14-2013 -->
+<!-- 03-28-2013 -->
 <html>
     <head>
         <title>Movie Rater</title>
@@ -37,24 +37,23 @@
                 <fieldset>
                     <legend>Movie Data</legend> 
                     <ul>
-                        <li id=""genre>Genres
-                        <li><input type="checkbox" id="action" value="action" class="checkbox" /><label for="Action">Action</label></li>
-                        <li><input type="checkbox" check value="sci-fi" id="sci-fi" /><label for="Sci-Fi">Sci-Fi</label></li>
-                        <li><input type="checkbox" check value="drama" id="drama" /><label for="Drama">Drama</label></li>
-                        <li><input type="checkbox" check value="horror" id="horror" /><label for="Horror">Horror</label></li>
-                        <li><input type="checkbox" check value="comedy" id="comedy" /><label for="Comedy">Comedy</label></li>
-                        <li><input type="checkbox" check value="documentary" id="documentary" /><label for="Documentary">Documentary</label></li>
-                        <li><input type="checkbox" check value="suspense" id="suspense" /><label for="Suspense">Suspense</label></li>
+                        <li id=""genre>Genres                        
+                        <li><input type="checkbox" id="action" value="action" name="genre" class="checkbox" /><label for="Action">Action</label></li>
+                        <li><input type="checkbox" check value="sci-fi" name="genre"id="sci-fi" /><label for="Sci-Fi">Sci-Fi</label></li>
+                        <li><input type="checkbox" check value="drama" name="genre"id="drama" /><label for="Drama">Drama</label></li>
+                        <li><input type="checkbox" check value="horror" name="genre"id="horror" /><label for="Horror">Horror</label></li>
+                        <li><input type="checkbox" check value="comedy"name="genre" id="comedy" /><label for="Comedy">Comedy</label></li>
+                        <li><input type="checkbox" check value="documentary"name="genre" id="documentary" /><label for="Documentary">Documentary</label></li>
+                        <li><input type="checkbox" check value="suspense"name="genre" id="suspense" /><label for="Suspense">Suspense</label></li>
                         <li><input id="movielength" type="range"/></li>
+                        <li><label< for="comments">What are your thoughts? :</label><textarea id="comments"></textarea>
+                            <br> </br>
+                        <li>Where did you watch movie?</li>
                     </ul>
-                    <li><label< for="comments">What are your thoughts? :</label><textarea id="comments"></textarea>
-                    <br> </br>
-                    </li>
-                    <li>Where did you watch movie?
-                        <ul>
-                            <li><input type="radio" checked value="Movie Theatre" id="movie" name="location" /><label for="movie"> Movie Theatre</label></li>
-                            <li><input type="radio" value="Home Movie" id="home" name="location" /><label for="home"> Home Movie</label></li>
-                        </ul>
+                    <ul>
+                        <li><input type="radio" checked value="Movie Theatre" id="movie" name="location" /><label for="movie"> Movie Theatre</label></li>
+                        <li><input type="radio" value="Home Movie" id="home" name="location" /><label for="home"> Home Movie</label></li>
+                    </ul>
                     </li>
                     <li>
                         <label for="rating">Rate The Movie</label>
@@ -73,6 +72,7 @@
                 </fieldset>
                 <input type="Button" value="Save Rating" id="save" />
             </form>
+            <script src="js/json.js" type="text/javascript"></script>
             <script src="js/main.js" type="text/javascript"></script>
         </body>
 </html>

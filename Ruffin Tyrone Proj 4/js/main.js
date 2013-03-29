@@ -1,7 +1,7 @@
 // Tyrone Ruffin
-// Project 2
+// Project 4
 // VFW 1303
-// 03-14-2013
+// 03-28-2013
 
 
 
@@ -96,7 +96,8 @@ window.addEventListener("DOMContentLoaded", function(){
     function getData(){
         toggleControl("on");
         if(localStorage.length === 0){
-            alert("No Titles Saved");
+            alert("No Titles Saved defualt data added");
+            autoFillData();
         }
         var myDiv = document.createElement("div");
         myDiv.setAttribute("id", "items");
@@ -113,6 +114,7 @@ window.addEventListener("DOMContentLoaded", function(){
             var object = JSON.parse (value);
             var makeSubList = document.createElement("ul");
             makeli.appendChild(makeSubList);
+            getImage(object.group[1], makeSubList);
             for(var n in object){
                 var mySubli = document.createElement("li");
                 makeSubList.appendChild(mySubli);
@@ -122,6 +124,14 @@ window.addEventListener("DOMContentLoaded", function(){
             }
             makeItemLinks(localStorage.key(i), linksLi);
         }
+    }
+    
+    function getImage(groupName, makeSublist){
+        var picLi = document.createElement("li");
+        makeSublist.appendChild(picLi);
+        var newPic = document.createElement("img")
+        var setSrc = newPic.setAttribute("src", "images/"+ groupName + ".png");
+        picLi.appendChild(newPic);
     }
     
     function makeItemLinks(key, linksLi){
@@ -140,6 +150,13 @@ window.addEventListener("DOMContentLoaded", function(){
      deleteLink.addEventListener("click", deleteItem);
      deleteLink.innerHTML = deleteText;
      linksLi.appendChild(deleteLink);
+    }
+    
+    function autoFillData(){
+        for(var n in json){
+            var id = Math.floor(Math.random()*10000001);
+            localStorage.setItem(id, JSON.stringify(json[n]));
+        }
     }
     
     function editItem(){
